@@ -92,7 +92,7 @@ This injects the shopping cart service into the component and makes it available
 
 Sometimes a service may or may not exist, like when an initializer conditionally registers a service.
 Since normal injection will throw an error if the service doesn't exist,
-you must look up the service using Ember's [`getOwner`](https://emberjs.com/api/classes/Ember.html#method_getOwner) instead. 
+you must look up the service using Ember's [`getOwner`](https://emberjs.com/api/classes/Ember.html#method_getOwner) instead.
 
 ```app/components/cart-contents.js
 import Component from '@ember/component';
