@@ -29,6 +29,13 @@ Add your new API key to the application by stopping the server and restarting it
 GOOGLE_MAPS_API_KEY=<your key here> ember s
 ```
 
+If you're running Windows
+
+```bash
+set GOOGLE_MAPS_KEY <your key here>
+ember s
+```
+
 ### Accessing the Google Maps API with a Utility
 
 Ember utilities are reusable code that can be accessed from various parts of the application.
