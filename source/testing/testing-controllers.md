@@ -102,6 +102,9 @@ This time when we setup our `moduleFor` we need to pass an options object as
 our third argument that has the controller's `needs`.
 
 ```tests/unit/controllers/comments-test.js
+import EmberObject from "@ember/object";
+import { run } from '@ember/runloop';
+
 moduleFor('controller:comments', 'Comments Controller', {
   needs: ['controller:post']
 });
