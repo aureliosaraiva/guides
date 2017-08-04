@@ -127,7 +127,7 @@ test('should update title on button click', function(assert) {
   assert.equal(this.$('h2').text(), 'Hello World', 'initial text is hello world');
 
   //Click on the button
-  Ember.run(() => document.querySelector('.title-button').click());
+  run(() => document.querySelector('.title-button').click());
 
   assert.equal(this.$('h2').text(), 'This is Magic', 'title changes after click');
 });
@@ -187,7 +187,7 @@ test('should trigger external action on form submit', function(assert) {
   this.$('textarea').change();
 
   // click the button to submit the form
-   Ember.run(() => document.querySelector('.comment-input').click());
+   run(() => document.querySelector('.comment-input').click());
 });
 ```
 ### Stubbing Services
@@ -306,7 +306,7 @@ export default Component.extend({
   actions: {
     handleTyping() {
       //the fetchResults function is passed into the component from its parent
-      Ember.run.debounce(this, this.get('fetchResults'), this.get('searchValue'), 250);
+      debounce(this, this.get('fetchResults'), this.get('searchValue'), 250);
     }
   }
 });
