@@ -195,11 +195,12 @@ Here is an example of an async helper:
 
 ```tests/helpers/dblclick.js
 import { registerAsyncHelper } from "@ember/test"
+import { run } from '@ember/runloop';
 
 export default registerAsyncHelper('dblclick',
   function(app, assert, selector, context) {
     let $el = findWithAssert(selector, context);
-    Ember.run(() => $el.dblclick());
+    run(() => $el.dblclick());
   }
 );
 
