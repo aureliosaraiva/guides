@@ -233,7 +233,7 @@ module.exports = {
     embertest: true
   }
   },
-  globals:{
+  globals: {
     shouldHaveElementWithCount: true,
     dblclick: true,
     addContact: true
