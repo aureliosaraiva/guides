@@ -62,6 +62,7 @@ export default Service.extend({
 To access a service,
 you can inject it in any container-resolved object such as a component or another service using the `inject` function from the `@ember/service` module.
 There are two ways to use this function.
+
 You can either invoke it with no arguments, or you can pass it the registered name of the service.
 When no arguments are passed, the service is loaded based on the name of the variable key.
 You can load the shopping cart service with no arguments like below.
