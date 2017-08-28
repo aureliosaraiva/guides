@@ -1,9 +1,13 @@
-project_identifier: emberjs
+project_identifier_env: CROWDIN_PROJECT_ID
 api_key_env: CROWDIN_API_KEY
-base_path: './source/localizable'
+base_path: "./"
+preserve_hierarchy: true
 
 files:
-  - source: '/**/*.md'
-    translation: '/**/%file_name%.%locale%.%file_extension%'
-    ignore:
-      - '/**/**.*.md'
+  -
+    source: 'source/**/*.md'
+    translation: 'source/%locale%/%original_file_name%'
+    languages_mapping: &anchor
+      locale:
+        'pt-BR': 'pt-BR'
+
