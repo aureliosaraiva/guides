@@ -5,8 +5,8 @@ preserve_hierarchy: true
 
 files:
   -
-    source: '/source/*.md'
-    translation: '/source/%locale%/%original_file_name%'
+    source: 'source/**/*.md'
+    translation: 'source/%locale%/%original_file_name%'
     languages_mapping: &anchor
       locale:
         'pt-BR': 'pt-BR'
